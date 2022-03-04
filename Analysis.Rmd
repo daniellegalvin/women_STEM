@@ -58,16 +58,28 @@ cond_data <- distinct(triple_mod$data) %>%
 
 mod_posts <- add_epred_draws(triple_mod, newdata=cond_data)
 
-mod_posts$.row=NULL
+mod_posts$.row=NULL #had to do this to make R stop forcing the .row column grouping, does not influence calculations
 
+#Making a data frame that I can use to calculate credible intervals
 test <- mod_posts %>% 
   select(-.chain, -.iteration) %>%
   distinct() %>% 
   pivot_wider(names_from = "gender", values_from = ".epred") %>% 
   mutate(diff = male - female)
+
+#Another data frame which I can use to calculate region and position specific values
+specific <- test %>% 
+  select(-diff) %>% 
+  pivot_wider(id_cols=c(region, .draw),
+              names_from=position, 
+              values_from=c("female", "male")) %>% 
+  pivot_wider(id_cols=c(.draw),
+              names_from=region,
+              values_from=c("female_tt", "male_tt", "female_instructor", "male_instructor"))
+  
 ```
 
-Calculating creible intervals and other necessary values
+Calculating credible intervals and other necessary values
 ```{r}
 #Median credible interval for the difference in men and women at each position by region
 test %>% 
@@ -84,11 +96,82 @@ test %>%
   group_by(region, position) %>% 
   median_qi(male)
 
-#Calculating the differences by regions
-tt_diff <- tidy_data %>% 
-  mutate(tt_diff=female_tt-male_tt, na.rm=T)
+#Calculating the differences in female_tt by region
+tt_diff <- specific %>% 
+  mutate(MW_SO_f_tt=female_tt_MW-female_tt_SO) %>% 
+  mutate(MW_NE_f_tt=female_tt_MW-female_tt_NE) %>% 
+  mutate(MW_RM_f_tt=female_tt_MW-female_tt_RM) %>% 
+  mutate(MW_WC_f_tt=female_tt_MW-female_tt_WC) %>% 
+  mutate(MW_SW_f_tt=female_tt_MW-female_tt_SW) %>% 
+  mutate(MW_NW_f_tt=female_tt_MW-female_tt_NW)
+
+#Calculating the difference between men and women employed in tt positions by region
+gender_tt_diff <- specific %>% 
+  mutate(MW_gender_tt=male_tt_MW-female_tt_MW) %>% 
+  mutate(SO_gender_tt=male_tt_SO-female_tt_SO) %>% 
+  mutate(NE_gender_tt=male_tt_NE-female_tt_NE) %>% 
+  mutate(RM_gender_tt=male_tt_RM-female_tt_RM) %>% 
+  mutate(WC_gender_tt=male_tt_WC-female_tt_WC) %>% 
+  mutate(SW_gender_tt=male_tt_SW-female_tt_SW) %>% 
+  mutate(NW_gender_tt=male_tt_NW-female_tt_NW)
 
 ```
+
+Calculating the probability that the number of women in tt positions is greater in the midwest compared to the other region listed
+```{r}
+tt_diff %>% 
+  summarize(higher=sum(MW_SO_f_tt>0)/nrow(.))
+#19.6 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the South.
+
+tt_diff %>% 
+  summarize(higher=sum(MW_NE_f_tt>0)/nrow(.))
+# < 0.1 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Northeast.
+
+#NOTE THAT YOU CAN NEVER HAVE 0 OR 100, ONLY  LESS THAN 0.1 OR GREATER THAN 99.9
+
+tt_diff %>% 
+  summarize(higher=sum(MW_RM_f_tt>0)/nrow(.))
+#92.9 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Rocky Mountain region.
+
+tt_diff %>% 
+  summarize(higher=sum(MW_WC_f_tt>0)/nrow(.))
+# < 0.1 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools on the West Coast.
+
+tt_diff %>% 
+  summarize(higher=sum(MW_SW_f_tt>0)/nrow(.))
+# 0.12 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Southwest region.
+
+tt_diff %>% 
+  summarize(higher=sum(MW_NW_f_tt>0)/nrow(.))
+# > 99.9 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Northwest region.
+```
+
+Calculatine the probability that the number of men employed in tt positions is greater than the number of women employed in tt positions for each region. 
+
+Fun (?) fact, there is a >99.9% probability that more men are employed in tt positions compared to women for ALL regions. 
+```{r}
+gender_tt_diff %>% 
+  summarize(sum(MW_gender_tt>0)/nrow(.))
+
+gender_tt_diff %>% 
+  summarize(sum(SO_gender_tt>0)/nrow(.))
+
+gender_tt_diff %>% 
+  summarize(sum(NE_gender_tt>0)/nrow(.))
+
+gender_tt_diff %>% 
+  summarize(sum(RM_gender_tt>0)/nrow(.))
+
+gender_tt_diff %>% 
+  summarize(sum(WC_gender_tt>0)/nrow(.))
+
+gender_tt_diff %>% 
+  summarize(sum(SW_gender_tt>0)/nrow(.))
+
+gender_tt_diff %>% 
+  summarize(sum(NW_gender_tt>0)/nrow(.))
+```
+
 
 Making the plots!
 ```{r}
@@ -106,6 +189,25 @@ all_data <- test %>%
   scale_y_log10()+
   labs(x="Position", y="Number of people employed")
 all_data
+
+gender_position <- test %>% 
+  pivot_longer(cols=c("female", "male"),
+               names_to="gender", 
+               values_to="value") %>% 
+  ggplot(aes(x=position, y=value, fill=gender))+
+  geom_boxplot()+
+  # scale_y_log10()+
+  labs(x="Position", y="Number of people employed")
+gender_position
+
+color_region <- test %>% 
+  pivot_longer(cols=c("female", "male"),
+               names_to="gender", 
+               values_to="value") %>% 
+  filter(position==("tt")) %>% 
+  ggplot(aes(x=gender, y=value, fill=region))+
+  geom_boxplot()
+color_region
 ```
 
 
