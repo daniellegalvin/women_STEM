@@ -12,7 +12,6 @@ library(tidybayes)
 library(wesanderson)
 ```
 
-
 ```{r}
 data <- read.csv("WSTEM_data.csv")
 head(data)
