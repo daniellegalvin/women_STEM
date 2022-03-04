@@ -1,0 +1,196 @@
+---
+title: "Analysis"
+author: "Danielle Galvin"
+date: "2/15/2022"
+output: html_document
+---
+
+MY QUESTION IS HOW DOES THE WOMEN TO MEN RATIO VARY BASED ON REGION OF THE UNITED STATES. GROUPED BY TT, INSTRUCTOR, GRAD, AND UGRAD.
+
+```{r}
+library(tidyverse)
+library(brms)
+library(tidybayes)
+```
+
+```{r}
+data <- read.csv("STEM Ratios - Sheet1 (3).csv")
+head(data)
+```
+
+Making plots to see what the data look like
+```{r}
+data %>% 
+  ggplot(aes(x=state, y=ugrad_w.m.r))+
+  geom_point()
+
+data$grad_w.m.r <- as.numeric(data$grad_w.m.r)
+
+combo_ratios <- data %>% 
+  pivot_longer(cols=-c("university", "full_name", "state", "SD", "uni_size", "uni_type", "dept", "region"), names_to="ratio_type", values_to="ratio") %>% 
+  mutate(level=case_when(ratio_type==c("ugrad_w.m.r", "grad_w.m.r") ~ "student",
+                         TRUE ~ "instructor"))
+
+combo_ratios %>% 
+  ggplot(aes(x=level, y=ratio, fill=ratio_type)) +
+  geom_boxplot()+
+  facet_wrap(vars(region))
+```
+
+```{r}
+d <- combo_ratios %>% 
+  filter(ratio>0)
+
+get_prior(ratio ~ 1+region*ratio_type,data=d, family=Gamma, link="log")
+
+model <- brm(ratio ~ 1+region*ratio_type,
+              data=d,
+              family=Gamma(link="log"),
+              prior=c(prior(normal(0.5, 0.25), class="b"),
+                      prior(normal(0.5, 0.25), class="Intercept")),
+              #sample_prior = "only",
+              file="model.RDS",
+              file_refit="on_change",
+              iter=1000, chains=1)
+
+saveRDS(model, file="model.RDS")
+
+plot(model)
+model
+
+plot(conditional_effects(model, points=T))
+
+pp_check(model, type="stat_grouped", group="ratio_type")
+pp_check(model, type="stat_grouped", group="region")
+
+```
+
+Calculating the differences
+```{r}
+model$data
+
+cond_data = distinct(model$data) %>% 
+  view()
+
+posts <- add_epred_draws(model, newdata=cond_data)
+
+#Plot to see differences in ratio at each level by region
+
+plot1 <- posts %>% 
+  ggplot(aes(x=region, y=.epred, color=region))+
+  geom_boxplot()+
+  geom_point(data=model$data, aes(y=ratio),
+             position=position_dodge(width=0.9))+
+  facet_wrap(vars(ratio_type))+
+  labs(y="Ratio of Women to Men", x="Region")+
+  scale_y_log10()
+plot1
+
+plot2 <- posts %>% 
+  ggplot(aes(x=ratio_type, y=.epred, color=ratio_type))+
+  geom_boxplot()+
+  geom_point(data=model$data, aes(y=ratio),
+             position=position_dodge(width=0.9))+
+  facet_wrap(vars(region))+
+  labs(y="Ratio of Women to Men", x="Position")+
+  scale_y_log10()
+plot2
+
+
+# pivoted_posts <- posts %>% 
+#   select(ratio, region, ratio_type,.draw,.row, .epred) %>% 
+#   ungroup() %>% 
+#   select(ratio, region, ratio_type, .draw, .epred) %>%
+#   pivot_wider(id_cols=c(ratio_type, region, .draw),
+#               names_from=ratio,
+#               values_from=c(.epred)) %>% 
+#   pivot_wider(id_cols=.draw,
+#               names_from=ratio_type,
+#               values_from=c("0.64", "0.74", "0.75", "0.15", "0.61", "0.3", "0.09", "0.57", "0.55", "0.67", "0.14", "0.44", "0.17", "0.58", "0.53", "0.2", "0.23", "1", "0.18", "0.54", "0.62", "0.16", "0.5", "0.52", "0.4", "0.25", "0.31", "0.71", "0.22", "0.33", "0.27", "0.21", "0.11", "0.59", "0.39", "0.7", "0.08", "0.35", "0.69", "0.29", "0.1", "0.12", "0.73", "0.36", "0.6", "0.13", "0.47", "0.41", "0.42", "0.63", "0.81", "0.38", "0.65", "0.26", "0.79", "0.66", "0.34", "0.28", "0.72", "0.46", "0.43", "0.48","0.68", "0.24", "0.8", "0.45", "0.37", "0.89", "0.56", "0.19", "0.9", "0.32","0.625", "0.83", "0.125", "0.49", "0.615", "0.341", "0.05", "0.86", "0.07" ))
+
+piv_posts <- posts %>% 
+  select(ratio, region, ratio_type,.draw,.row, .epred) %>% 
+  ungroup() %>% 
+  select(ratio, region, ratio_type, .draw, .epred) %>%
+  pivot_wider(id_cols=c(ratio_type, ratio, .draw),
+              names_from=region,
+              values_from=c(.epred)) %>% 
+  pivot_wider(id_cols=c(.draw, ratio ),
+              names_from=ratio_type,
+              values_from=c(MW, SO, RM, WC, NE, SW, NW))
+
+piv_posts
+
+diff_posts <- posts %>% 
+  select(ratio, region, ratio_type,.draw,.row, .epred) %>% 
+  ungroup() %>% 
+  select(ratio, region, ratio_type, .draw, .epred) %>%
+  group_by(ratio_type) %>% 
+  pivot_wider(id_cols=c(ratio, .draw, ratio_type),
+              names_from=region,
+              values_from=.epred) %>% 
+  pivot_wider(id_cols=c(),
+              names_from=ratio_type,
+              values_from=c(MW, SO, RM, WC, NE, SW, NW))
+  view()
+
+diff_posts <- piv_posts %>% 
+  mutate(MW_tt_ins_diff=MW_tt_faculty_w.m.r-MW_instructor_w.m.r) %>% 
+  mutate(SO_tt_ins_diff=SO_tt_faculty_w.m.r-SO_instructor_w.m.r) %>% 
+  mutate(SW_tt_ins_diff=SW_tt_faculty_w.m.r-SW_instructor_w.m.r) %>% 
+  mutate(RM_tt_ins_diff=RM_tt_faculty_w.m.r-RM_instructor_w.m.r) %>% 
+  mutate(WC_tt_ins_diff=WC_tt_faculty_w.m.r-WC_instructor_w.m.r) %>% 
+  mutate(NE_tt_ins_diff=NE_tt_faculty_w.m.r-NE_instructor_w.m.r) %>% 
+  mutate(NW_tt_ins_diff=NW_tt_faculty_w.m.r-NW_instructor_w.m.r) 
+  
+
+diff_posts %>% 
+  ggplot)
+
+  
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

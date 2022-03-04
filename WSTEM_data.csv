@@ -1,0 +1,773 @@
+university,university full,state,SD,region,uni_size,uni_type,department,position,gender,number
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,biology,instructor,female,3
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,biology,instructor,male,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,biology,tt,female,2
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,biology,tt,male,11
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,chemistry,instructor,female,0
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,chemistry,instructor,male,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,chemistry,tt,female,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,chemistry,tt,male,10
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,math,instructor,female,7
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,math,instructor,male,3
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,math,tt,female,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,math,tt,male,6
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,physics,instructor,female,0
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,physics,instructor,male,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,physics,tt,female,0
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,physics,tt,male,5
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,comp_sci,instructor,female,0
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,comp_sci,instructor,male,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,comp_sci,tt,female,1
+USD,University of South Dakota,South Dakota,y,MW,10000,R2,comp_sci,tt,male,3
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,biology,instructor,female,6
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,biology,instructor,male,3
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,biology,tt,female,4
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,biology,tt,male,16
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,chemistry,instructor,female,4
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,chemistry,instructor,male,0
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,chemistry,tt,female,1
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,chemistry,tt,male,9
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,math,instructor,female,8
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,math,instructor,male,5
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,math,tt,female,4
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,math,tt,male,14
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,physics,instructor,female,1
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,physics,instructor,male,1
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,physics,tt,female,0
+SDSU,South Dakota State University,South Dakota,y,MW,11000,R2,physics,tt,male,5
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,math,instructor,female,2
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,math,instructor,male,5
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,math,tt,female,3
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,math,tt,male,8
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,physics,instructor,female,0
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,physics,instructor,male,1
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,physics,tt,female,0
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,physics,tt,male,11
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,engineering,instructor,female,7
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,engineering,instructor,male,33
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,engineering,instructor,unknown,1
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,engineering,tt,female,11
+MINES,South Dakota School of Mines,South Dakota,y,MW,2100,PUI,engineering,tt,male,71
+USF,University of South Florida,Florida,n,SO,40000,R1,biology,instructor,male,10
+USF,University of South Florida,Florida,n,SO,40000,R1,biology,instructor,female,7
+USF,University of South Florida,Florida,n,SO,40000,R1,biology,instructor,unknown,1
+USF,University of South Florida,Florida,n,SO,40000,R1,biology,tt,female,16
+USF,University of South Florida,Florida,n,SO,40000,R1,biology,tt,male,27
+USF,University of South Florida,Florida,n,SO,40000,R1,chemistry,instructor,male,6
+USF,University of South Florida,Florida,n,SO,40000,R1,chemistry,instructor,female,9
+USF,University of South Florida,Florida,n,SO,40000,R1,chemistry,tt,female,2
+USF,University of South Florida,Florida,n,SO,40000,R1,chemistry,tt,male,22
+USF,University of South Florida,Florida,n,SO,40000,R1,math,instructor,male,10
+USF,University of South Florida,Florida,n,SO,40000,R1,math,instructor,female,5
+USF,University of South Florida,Florida,n,SO,40000,R1,math,tt,female,4
+USF,University of South Florida,Florida,n,SO,40000,R1,math,tt,male,27
+USF,University of South Florida,Florida,n,SO,40000,R1,math,tt,unknown,2
+USF,University of South Florida,Florida,n,SO,40000,R1,physics,instructor,male,4
+USF,University of South Florida,Florida,n,SO,40000,R1,physics,instructor,female,1
+USF,University of South Florida,Florida,n,SO,40000,R1,physics,tt,female,3
+USF,University of South Florida,Florida,n,SO,40000,R1,physics,tt,male,21
+USF,University of South Florida,Florida,n,SO,40000,R1,comp_sci,instructor,male,7
+USF,University of South Florida,Florida,n,SO,40000,R1,comp_sci,instructor,female,5
+USF,University of South Florida,Florida,n,SO,40000,R1,comp_sci,tt,female,3
+USF,University of South Florida,Florida,n,SO,40000,R1,comp_sci,tt,male,23
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,biology,tt,female,4
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,biology,tt,male,8
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,chemistry,tt,female,1
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,chemistry,tt,male,6
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,math,instructor,female,1
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,math,instructor,male,1
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,math,tt,female,1
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,math,tt,male,4
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,physics,tt,female,1
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,physics,tt,male,4
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,comp_sci,tt,female,0
+UNO,Univeristy of New Orelans,Louisiana,n,SO,7000,R2,comp_sci,tt,male,13
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,biology,tt,female,6
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,biology,tt,male,13
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,biology,instructor,female,0
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,biology,instructor,male,2
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,chemistry,tt,female,4
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,chemistry,tt,male,12
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,chemistry,tt,unknown,1
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,chemistry,instructor,female,6
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,chemistry,instructor,male,5
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,physics,tt,female,0
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,physics,tt,male,5
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,physics,instructor,female,0
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,physics,instructor,male,3
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,engineering,tt,female,0
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,engineering,tt,male,5
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,engineering,instructor,female,0
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,engineering,instructor,male,1
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,math_comp_sci,tt,female,3
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,math_comp_sci,tt,male,11
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,math_comp_sci,instructor,female,4
+NMU,Northern Michigan University,Michigan,n,MW,7000,R2,math_comp_sci,instructor,male,3
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,biology,tt,female,5
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,biology,tt,male,5
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,biology,instructor,female,3
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,biology,instructor,male,2
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,chem_physics,tt,female,5
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,chem_physics,tt,male,7
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,chem_physics,instructor,female,1
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,chem_physics,instructor,male,2
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,engineering,tt,female,6
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,engineering,tt,male,19
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,engineering,instructor,female,2
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,engineering,instructor,male,12
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,math_comp_sci,tt,female,10
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,math_comp_sci,tt,male,20
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,math_comp_sci,tt,unknown,2
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,math_comp_sci,instructor,female,4
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,math_comp_sci,instructor,male,5
+UWStout,University of Wisconsin Stout,Wisconsin,n,MW,10000,R2,math_comp_sci,instructor,unknown,1
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,biology,tt,female,7
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,biology,tt,male,4
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,biology,instructor,female,1
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,biology,instructor,male,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,chemistry,tt,female,3
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,chemistry,tt,male,7
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,chemistry,instructor,female,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,chemistry,instructor,male,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,physics,tt,female,1
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,physics,tt,male,8
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,physics,instructor,female,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,physics,instructor,male,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,engineering,tt,female,8
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,engineering,tt,male,18
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,engineering,instructor,female,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,engineering,instructor,male,0
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,math,tt,female,6
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,math,tt,male,9
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,math,instructor,female,1
+Valpo,Valparaiso,Indiana,n,MW,5000,R2,math,instructor,male,1
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,biology,tt,female,4
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,biology,tt,male,15
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,biology,instructor,female,3
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,biology,instructor,male,0
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,chemistry,tt,female,2
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,chemistry,tt,male,10
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,chemistry,instructor,female,1
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,chemistry,instructor,male,0
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,physics,tt,female,0
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,physics,tt,male,6
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,physics,tt,unknown,1
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,physics,instructor,female,0
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,physics,instructor,male,0
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,engineering,tt,female,12
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,engineering,tt,male,54
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,engineering,instructor,female,0
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,engineering,instructor,male,7
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,math,tt,female,11
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,math,tt,male,9
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,math,instructor,female,1
+USM,University of Southern Mississippi,Mississippi,n,SO,15000,R1,math,instructor,male,1
+Westminster,Westminster College,Utah,n,RM,2000,PUI,biology,tt,female,2
+Westminster,Westminster College,Utah,n,RM,2000,PUI,biology,tt,male,3
+Westminster,Westminster College,Utah,n,RM,2000,PUI,biology,instructor,female,0
+Westminster,Westminster College,Utah,n,RM,2000,PUI,biology,instructor,male,0
+Westminster,Westminster College,Utah,n,RM,2000,PUI,chemistry,tt,female,2
+Westminster,Westminster College,Utah,n,RM,2000,PUI,chemistry,tt,male,1
+Westminster,Westminster College,Utah,n,RM,2000,PUI,chemistry,instructor,female,0
+Westminster,Westminster College,Utah,n,RM,2000,PUI,chemistry,instructor,male,0
+Westminster,Westminster College,Utah,n,RM,2000,PUI,physics,tt,female,2
+Westminster,Westminster College,Utah,n,RM,2000,PUI,physics,tt,male,1
+Westminster,Westminster College,Utah,n,RM,2000,PUI,physics,instructor,female,0
+Westminster,Westminster College,Utah,n,RM,2000,PUI,physics,instructor,male,0
+Westminster,Westminster College,Utah,n,RM,2000,PUI,math,tt,female,2
+Westminster,Westminster College,Utah,n,RM,2000,PUI,math,tt,male,4
+Westminster,Westminster College,Utah,n,RM,2000,PUI,math,tt,unknown,1
+CU,Clemson University,South Carolina,n,SO,27000,R1,biology,instructor,male,15
+CU,Clemson University,South Carolina,n,SO,27000,R1,biology,instructor,female,7
+CU,Clemson University,South Carolina,n,SO,27000,R1,biology,tt,male,35
+CU,Clemson University,South Carolina,n,SO,27000,R1,biology,tt,female,23
+CU,Clemson University,South Carolina,n,SO,27000,R1,chemistry,instructor,male,3
+CU,Clemson University,South Carolina,n,SO,27000,R1,chemistry,instructor,female,2
+CU,Clemson University,South Carolina,n,SO,27000,R1,chemistry,tt,male,25
+CU,Clemson University,South Carolina,n,SO,27000,R1,chemistry,tt,female,3
+CU,Clemson University,South Carolina,n,SO,27000,R1,math,instructor,male,20
+CU,Clemson University,South Carolina,n,SO,27000,R1,math,instructor,female,19
+CU,Clemson University,South Carolina,n,SO,27000,R1,math,tt,male,64
+CU,Clemson University,South Carolina,n,SO,27000,R1,math,tt,female,22
+CU,Clemson University,South Carolina,n,SO,27000,R1,physics,instructor,male,3
+CU,Clemson University,South Carolina,n,SO,27000,R1,physics,instructor,female,2
+CU,Clemson University,South Carolina,n,SO,27000,R1,physics,tt,male,25
+CU,Clemson University,South Carolina,n,SO,27000,R1,physics,tt,female,3
+CU,Clemson University,South Carolina,n,SO,27000,R1,engineering,instructor,male,23
+CU,Clemson University,South Carolina,n,SO,27000,R1,engineering,instructor,female,16
+CU,Clemson University,South Carolina,n,SO,27000,R1,engineering,tt,male,155
+CU,Clemson University,South Carolina,n,SO,27000,R1,engineering,tt,female,34
+MC,Midland College,Texas,n,SO,4700,PUI,biology,instructor,male,0
+MC,Midland College,Texas,n,SO,4700,PUI,biology,instructor,female,3
+MC,Midland College,Texas,n,SO,4700,PUI,biology,tt,male,4
+MC,Midland College,Texas,n,SO,4700,PUI,biology,tt,female,4
+MC,Midland College,Texas,n,SO,4700,PUI,chemistry,instructor,male,1
+MC,Midland College,Texas,n,SO,4700,PUI,chemistry,instructor,female,0
+MC,Midland College,Texas,n,SO,4700,PUI,chemistry,tt,male,2
+MC,Midland College,Texas,n,SO,4700,PUI,chemistry,tt,female,1
+MC,Midland College,Texas,n,SO,4700,PUI,comp_sci,instructor,male,0
+MC,Midland College,Texas,n,SO,4700,PUI,comp_sci,instructor,female,0
+MC,Midland College,Texas,n,SO,4700,PUI,comp_sci,tt,male,0
+MC,Midland College,Texas,n,SO,4700,PUI,comp_sci,tt,female,3
+MC,Midland College,Texas,n,SO,4700,PUI,engineering,instructor,male,1
+MC,Midland College,Texas,n,SO,4700,PUI,engineering,instructor,female,0
+MC,Midland College,Texas,n,SO,4700,PUI,engineering,tt,male,2
+MC,Midland College,Texas,n,SO,4700,PUI,engineering,tt,female,0
+MC,Midland College,Texas,n,SO,4700,PUI,geology,instructor,male,3
+MC,Midland College,Texas,n,SO,4700,PUI,geology,instructor,female,0
+MC,Midland College,Texas,n,SO,4700,PUI,geology,tt,male,2
+MC,Midland College,Texas,n,SO,4700,PUI,geology,tt,female,1
+MC,Midland College,Texas,n,SO,4700,PUI,math,instructor,male,2
+MC,Midland College,Texas,n,SO,4700,PUI,math,instructor,female,10
+MC,Midland College,Texas,n,SO,4700,PUI,math,tt,male,1
+MC,Midland College,Texas,n,SO,4700,PUI,math,tt,female,5
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,biology,instructor,female,3
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,biology,instructor,male,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,biology,tt,female,5
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,biology,tt,male,10
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,chemistry,instructor,female,3
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,chemistry,instructor,male,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,chemistry,tt,female,6
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,chemistry,tt,male,6
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,comp_sci,instructor,female,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,comp_sci,instructor,male,1
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,comp_sci,tt,female,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,comp_sci,tt,male,8
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,engineering,instructor,female,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,engineering,instructor,male,3
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,engineering,tt,female,2
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,engineering,tt,male,8
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,geology,instructor,female,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,geology,instructor,male,1
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,geology,tt,female,2
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,geology,tt,male,3
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,math,instructor,female,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,math,instructor,male,0
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,math,tt,female,5
+WSU,Winona State University,Minnesota,n,MW,7600,PUI,math,tt,male,14
+BU,Brown University,Rhode Island,n,NE,9100,R1,biology,instructor,female,7
+BU,Brown University,Rhode Island,n,NE,9100,R1,biology,instructor,male,14
+BU,Brown University,Rhode Island,n,NE,9100,R1,biology,tt,female,30
+BU,Brown University,Rhode Island,n,NE,9100,R1,biology,tt,male,56
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+BU,Brown University,Rhode Island,n,NE,9100,R1,,,,
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,biology,tt,female,10
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,biology,tt,male,23
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,biology,instructor,female,3
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,biology,instructor,male,2
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,chemistry,tt,female,3
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,chemistry,tt,male,18
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,chemistry,instructor,female,0
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,chemistry,instructor,male,2
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,physics,tt,female,3
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,physics,tt,male,23
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,physics,tt,unknown,1
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,physics,instructor,female,2
+UNL,University of Nebraska Lincoln,Nebraska,n,MW,26000,R1,physics,instructor,male,6
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,biology,tt,female,7
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,biology,tt,male,8
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,biology,tt,unknown,1
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,biology,instructor,female,2
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,biology,instructor,male,2
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,chemistry,tt,female,4
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,chemistry,tt,male,13
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,chemistry,instructor,female,4
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,chemistry,instructor,male,2
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,physics,tt,female,2
+Creighton,Creighton University,Nebraska,n,MW,8600,PUI,physics,tt,male,8
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,molecular_biology,tt,female,3
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,molecular_biology,tt,male,10
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,molecular_biology,instructor,female,1
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,molecular_biology,instructor,male,0
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,chemistry,tt,female,3
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,chemistry,tt,male,9
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,chemistry,instructor,female,3
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,chemistry,instructor,male,1
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,physics,tt,female,0
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,physics,tt,male,10
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,physics,instructor,female,4
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,physics,instructor,male,1
+UWyoming,University of Wyoming,Wyoming,n,RM,12600,R2,physics,instructor,unknown,1
+TCU,Texas Christian University,Texas,n,SO,10400,R2,biology,tt,female,4
+TCU,Texas Christian University,Texas,n,SO,10400,R2,biology,tt,male,7
+TCU,Texas Christian University,Texas,n,SO,10400,R2,biology,instructor,female,6
+TCU,Texas Christian University,Texas,n,SO,10400,R2,biology,instructor,male,3
+TCU,Texas Christian University,Texas,n,SO,10400,R2,chemistry,tt,female,1
+TCU,Texas Christian University,Texas,n,SO,10400,R2,chemistry,tt,male,8
+TCU,Texas Christian University,Texas,n,SO,10400,R2,chemistry,instructor,female,2
+TCU,Texas Christian University,Texas,n,SO,10400,R2,chemistry,instructor,male,0
+TCU,Texas Christian University,Texas,n,SO,10400,R2,physics,tt,female,3
+TCU,Texas Christian University,Texas,n,SO,10400,R2,physics,tt,male,5
+TCU,Texas Christian University,Texas,n,SO,10400,R2,physics,instructor,female,0
+TCU,Texas Christian University,Texas,n,SO,10400,R2,physics,instructor,male,2
+UC Davis,University of California Davis,California,n,WC,35000,R1,molecular_cellular_biology,tt,female,9
+UC Davis,University of California Davis,California,n,WC,35000,R1,molecular_cellular_biology,tt,male,15
+UC Davis,University of California Davis,California,n,WC,35000,R1,molecular_cellular_biology,instructor,female,1
+UC Davis,University of California Davis,California,n,WC,35000,R1,molecular_cellular_biology,instructor,male,1
+UC Davis,University of California Davis,California,n,WC,35000,R1,chemistry,tt,female,10
+UC Davis,University of California Davis,California,n,WC,35000,R1,chemistry,tt,male,28
+UC Davis,University of California Davis,California,n,WC,35000,R1,chemistry,instructor,female,2
+UC Davis,University of California Davis,California,n,WC,35000,R1,chemistry,instructor,male,1
+UC Davis,University of California Davis,California,n,WC,35000,R1,physics,tt,female,11
+UC Davis,University of California Davis,California,n,WC,35000,R1,physics,tt,male,38
+UC Davis,University of California Davis,California,n,WC,35000,R1,physics,instructor,female,2
+UC Davis,University of California Davis,California,n,WC,35000,R1,physics,instructor,male,7
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,biology,tt,male,14
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,biology,tt,female,5
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,biology,instructor,male,5
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,biology,instructor,female,5
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,chemistry,tt,male,15
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,chemistry,tt,female,3
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,chemistry,instructor,male,1
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,chemistry,instructor,female,1
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,math,tt,male,15
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,math,tt,female,4
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,math,instructor,male,3
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,math,instructor,female,4
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,comp_sci,tt,male,6
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,comp_sci,tt,female,2
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,comp_sci,instructor,male,1
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,comp_sci,instructor,female,0
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,engineering,tt,male,2
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,engineering,tt,female,1
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,engineering,instructor,male,0
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,engineering,instructor,female,1
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,physics,tt,male,9
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,physics,tt,female,2
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,physics,instructor,male,1
+MSU,Missouri State University ,Missouri,n,MW,24000,PUI,physics,instructor,female,0
+UC Berkley,University of California ,California ,n,WC,42000,R1,biology,tt,male,30
+UC Berkley,University of California ,California ,n,WC,42000,R1,biology,tt,female,10
+UC Berkley,University of California ,California ,n,WC,42000,R1,biology,instructor,male,1
+UC Berkley,University of California ,California ,n,WC,42000,R1,biology,instructor,female,1
+UC Berkley,University of California ,California ,n,WC,42000,R1,chemistry,tt,male,52
+UC Berkley,University of California ,California ,n,WC,42000,R1,chemistry,tt,female,7
+UC Berkley,University of California ,California ,n,WC,42000,R1,chemistry,instructor,male,5
+UC Berkley,University of California ,California ,n,WC,42000,R1,chemistry,instructor,female,3
+UC Berkley,University of California ,California ,n,WC,42000,R1,math,tt,male,48
+UC Berkley,University of California ,California ,n,WC,42000,R1,math,tt,female,7
+UC Berkley,University of California ,California ,n,WC,42000,R1,math,instructor,male,5
+UC Berkley,University of California ,California ,n,WC,42000,R1,math,instructor,female,3
+UC Berkley,University of California ,California ,n,WC,42000,R1,comp_sci,tt,male,63
+UC Berkley,University of California ,California ,n,WC,42000,R1,comp_sci,tt,female,18
+UC Berkley,University of California ,California ,n,WC,42000,R1,comp_sci,instructor,male,7
+UC Berkley,University of California ,California ,n,WC,42000,R1,comp_sci,instructor,female,2
+UC Berkley,University of California ,California ,n,WC,42000,R1,engineering,tt,male,102
+UC Berkley,University of California ,California ,n,WC,42000,R1,engineering,tt,female,34
+UC Berkley,University of California ,California ,n,WC,42000,R1,engineering,instructor,male,16
+UC Berkley,University of California ,California ,n,WC,42000,R1,engineering,instructor,female,4
+UC Berkley,University of California ,California ,n,WC,42000,R1,physics,tt,male,50
+UC Berkley,University of California ,California ,n,WC,42000,R1,physics,tt,female,11
+UC Berkley,University of California ,California ,n,WC,42000,R1,physics,instructor,male,10
+UC Berkley,University of California ,California ,n,WC,42000,R1,physics,instructor,female,3
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,biology,tt,male,15
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,biology,tt,female,10
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,biology,instructor,male,1
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,biology,instructor,female,8
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,chemistry,tt,male,19
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,chemistry,tt,female,5
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,chemistry,instructor,male,1
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,chemistry,instructor,female,3
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,math,tt,male,20
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,math,tt,female,7
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,math,instructor,male,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,math,instructor,female,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,comp_sci,tt,male,9
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,comp_sci,tt,female,3
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,comp_sci,instructor,male,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,comp_sci,instructor,female,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,engineering,tt,male,21
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,engineering,tt,female,7
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,engineering,instructor,male,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,engineering,instructor,female,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,physics,tt,male,7
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,physics,tt,female,2
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,physics,instructor,male,0
+SLU,Saint Louis University ,Missouri ,n,MW,13000,R2,physics,instructor,female,0
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,biology,tt,male,26
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,biology,tt,female,21
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,biology,instructor,male,5
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,biology,instructor,female,10
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,chemistry,tt,male,4
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,chemistry,tt,female,8
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,chemistry,instructor,male,3
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,chemistry,instructor,female,2
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,math,tt,male,12
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,math,tt,female,7
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,math,instructor,male,12
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,math,instructor,female,9
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,comp_sci,tt,male,28
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,comp_sci,tt,female,6
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,comp_sci,instructor,male,4
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,comp_sci,instructor,female,1
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,engineering,tt,male,8
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,engineering,tt,female,2
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,engineering,instructor,male,4
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,engineering,instructor,female,1
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,physics,tt,male,11
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,physics,tt,female,2
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,physics,instructor,male,3
+NAU,Northern Arizona University ,Arizonia ,n,SW,29000,R2,physics,instructor,female,0
+Yale ,Yale ,Connecticut,n,NE,12000,R1,biology,tt,male,34
+Yale ,Yale ,Connecticut,n,NE,12000,R1,biology,tt,female,17
+Yale ,Yale ,Connecticut,n,NE,12000,R1,biology,instructor,male,5
+Yale ,Yale ,Connecticut,n,NE,12000,R1,biology,instructor,female,7
+Yale ,Yale ,Connecticut,n,NE,12000,R1,chemistry,tt,male,25
+Yale ,Yale ,Connecticut,n,NE,12000,R1,chemistry,tt,female,7
+Yale ,Yale ,Connecticut,n,NE,12000,R1,chemistry,instructor,male,5
+Yale ,Yale ,Connecticut,n,NE,12000,R1,chemistry,instructor,female,2
+Yale ,Yale ,Connecticut,n,NE,12000,R1,math,tt,male,17
+Yale ,Yale ,Connecticut,n,NE,12000,R1,math,tt,female,3
+Yale ,Yale ,Connecticut,n,NE,12000,R1,math,instructor,male,8
+Yale ,Yale ,Connecticut,n,NE,12000,R1,math,instructor,female,4
+Yale ,Yale ,Connecticut,n,NE,12000,R1,comp_sci,tt,male,21
+Yale ,Yale ,Connecticut,n,NE,12000,R1,comp_sci,tt,female,5
+Yale ,Yale ,Connecticut,n,NE,12000,R1,comp_sci,instructor,male,10
+Yale ,Yale ,Connecticut,n,NE,12000,R1,comp_sci,instructor,female,1
+Yale ,Yale ,Connecticut,n,NE,12000,R1,engineering,tt,male,120
+Yale ,Yale ,Connecticut,n,NE,12000,R1,engineering,tt,female,29
+Yale ,Yale ,Connecticut,n,NE,12000,R1,engineering,instructor,male,3
+Yale ,Yale ,Connecticut,n,NE,12000,R1,engineering,instructor,female,1
+Yale ,Yale ,Connecticut,n,NE,12000,R1,physics,tt,male,22
+Yale ,Yale ,Connecticut,n,NE,12000,R1,physics,tt,female,2
+Yale ,Yale ,Connecticut,n,NE,12000,R1,physics,instructor,male,0
+Yale ,Yale ,Connecticut,n,NE,12000,R1,physics,instructor,female,0
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,biology,tt,female,4
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,biology,tt,male,5
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,chemistry,tt,female,2
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,chemistry,tt,male,2
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,physics,tt,female,1
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,physics,tt,male,2
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,mathematics,tt,female,1
+NWU,Nebraska Wesleyan University,Nebraska,n,MW,1924,PUI,mathematics,tt,male,2
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,biology,tt,female,4
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,biology,tt,male,17
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,biology,instructor,female,6
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,biology,instructor,male,3
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,chemistry,tt,female,2
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,chemistry,tt,male,10
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,chemistry,instructor,female,3
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,chemistry,instructor,male,4
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,physics,tt,female,1
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,physics,tt,male,7
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,physics,instructor,female,0
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,physics,instructor,male,3
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,mathematics,tt,female,8
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,mathematics,tt,male,12
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,mathematics,instructor,female,7
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,mathematics,instructor,male,6
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,geology,tt,female,2
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,geology,tt,male,3
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,geology,instructor,female,1
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,geology,instructor,male,0
+UNEO,University of Nebraska Omaha,Nebraska,n,MW,15892,R2,computer science,,,
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,biology,tt,female,7
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,biology,tt,male,13
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,biology,instructor,female,4
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,biology,instructor,male,2
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,chemistry,tt,female,6
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,chemistry,tt,male,13
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,chemistry,instructor,female,5
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,chemistry,instructor,male,2
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,physics,tt,female,1
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,physics,tt,male,20
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,physics,instructor,female,0
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,physics,instructor,male,2
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,mathematics,tt,female,1
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,mathematics,tt,male,18
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,mathematics,instructor,female,17
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,mathematics,instructor,male,4
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,geology,tt,female,8
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,geology,tt,male,13
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,geology,instructor,female,1
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,geology,instructor,male,0
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,engineering,tt,female,3
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,engineering,tt,male,19
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,engineering,instructor,female,1
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,engineering,instructor,male,3
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,computer science,tt,female,6
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,computer science,tt,male,17
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,computer science,instructor,female,3
+ODU,Old Dominion University,Virginia,n,SO,23675,R2,computer science,instructor,male,4
+CU,Clemson University,South Carolina,n,SO,27000,R1,biology,,,
+CU,Clemson University,South Carolina,n,SO,27000,R1,chemistry,,,
+CU,Clemson University,South Carolina,n,SO,27000,R1,math,,,
+CU,Clemson University,South Carolina,n,SO,27000,R1,physics,,,
+CU,Clemson University,South Carolina,n,SO,27000,R1,engineering,,,
+SU,Standford University,California,n,WC,19343,R1,biology,tt,female,23
+SU,Standford University,California,n,WC,19343,R1,biology,tt,male,37
+SU,Standford University,California,n,WC,19343,R1,biology,instructor,female,4
+SU,Standford University,California,n,WC,19343,R1,biology,instructor,male,2
+SU,Standford University,California,n,WC,19343,R1,chemistry,tt,female,6
+SU,Standford University,California,n,WC,19343,R1,chemistry,tt,male,22
+SU,Standford University,California,n,WC,19343,R1,chemistry,instructor,female,2
+SU,Standford University,California,n,WC,19343,R1,chemistry,instructor,male,6
+SU,Standford University,California,n,WC,19343,R1,physics,tt,female,11
+SU,Standford University,California,n,WC,19343,R1,physics,tt,male,38
+SU,Standford University,California,n,WC,19343,R1,physics,instructor,female,0
+SU,Standford University,California,n,WC,19343,R1,physics,instructor,male,4
+SU,Standford University,California,n,WC,19343,R1,math,tt,female,5
+SU,Standford University,California,n,WC,19343,R1,math,tt,male,48
+SU,Standford University,California,n,WC,19343,R1,math,instructor,female,2
+SU,Standford University,California,n,WC,19343,R1,math,instructor,male,5
+SU,Standford University,California,n,WC,19343,R1,geology,tt,female,5
+SU,Standford University,California,n,WC,19343,R1,geology,tt,male,10
+SU,Standford University,California,n,WC,19343,R1,geology,instructor,female,0
+SU,Standford University,California,n,WC,19343,R1,geology,instructor,male,0
+SU,Standford University,California,n,WC,19343,R1,computer science,tt,female,13
+SU,Standford University,California,n,WC,19343,R1,computer science,tt,male,55
+SU,Standford University,California,n,WC,19343,R1,computer science,instructor,female,4
+SU,Standford University,California,n,WC,19343,R1,computer science,instructor,male,8
+SU,Standford University,California,n,WC,19343,R1,engineering,tt,female,62
+SU,Standford University,California,n,WC,19343,R1,engineering,tt,male,228
+SU,Standford University,California,n,WC,19343,R1,engineering,instructor,female,0
+SU,Standford University,California,n,WC,19343,R1,engineering,instructor,male,0
+Union ,Union College,New York ,n,NE,2400,PUI,biology ,instructor ,male,0
+Union ,Union College,New York ,n,NE,2400,PUI,biology,instructor ,female ,2
+Union ,Union College,New York ,n,NE,2400,PUI,biology,tt,male,0
+Union ,Union College,New York ,n,NE,2400,PUI,biology,tt,female ,0
+Union ,Union College,New York ,n,NE,2400,PUI,mechanical engineering,tt,male,10
+Union ,Union College,New York ,n,NE,2400,PUI,mechanical engineering,tt,female ,3
+Union ,Union College,New York ,n,NE,2400,PUI,chemistry,instructor ,male,2
+Union ,Union College,New York ,n,NE,2400,PUI,chemistry,instructor ,female ,0
+Union ,Union College,New York ,n,NE,2400,PUI,chemistry,tt,female ,7
+Union ,Union College,New York ,n,NE,2400,PUI,chemistry,tt,male,4
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,biology,tt,male,1
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,biology,tt,female ,2
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,biology,instructor ,female ,1
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,biology,instructor ,male,2
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,math,tt,male,6
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,math,tt,female ,1
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,math,instructor ,male,0
+Adelphi ,Adelphi Univeristy,New York ,n,NE,6000,R2,math,instructor ,female ,1
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,biology,tt,male,0
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,biology,tt,female ,1
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,biology,instructor ,male,0
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,biology,instructor ,female ,0
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,computer science,tt,male,1
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,computer science,tt,female ,0
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,computer science,instructor ,male,1
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,computer science,instructor ,female ,0
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,math ,tt,male,3
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,math ,tt,female ,1
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,math ,instructor ,male,0
+Furman ,Furman ,South Carolina ,n,SO,2900,PUI,math ,instructor ,female ,0
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,biology,tt,male,5
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,biology,tt,female ,2
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,biology,instructor ,male,0
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,biology,instructor ,female ,2
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,engineering,tt,male,0
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,engineering,tt,female ,2
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,engineering,instructor ,male,1
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,engineering,instructor ,female ,0
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,math,tt,male,2
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,math,tt,female ,1
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,math,instructor ,male,4
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,math,instructor ,female ,0
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,computer science,tt,male,4
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,computer science,tt,female ,3
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,computer science,instructor ,male,3
+Dartmouth ,Dartmouth ,New Hampshire,n,NE,6350,R1,computer science,instructor ,female ,2
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Biology ,tt,male,3
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Biology ,tt,female ,1
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Biology ,instructor ,male,0
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Biology ,instructor ,female ,2
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Engineering,tt,male,8
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Engineering,tt,female ,1
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Engineering,instructor ,male,0
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Engineering,instructor ,female ,0
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Math,tt,male,1
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Math,tt,female ,0
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Math,instructor ,male,0
+UAA ,Univeristy of Anchorage Alaska,Alaska ,n,NW,11400,R2,Math,instructor ,female ,0
+WSU,Washington State University,Washington,n,NW,29700,R1,biology,tt,female,11
+WSU,Washington State University,Washington,n,NW,29700,R1,biology,tt,male,22
+WSU,Washington State University,Washington,n,NW,29700,R1,biology,instructor,female,6
+WSU,Washington State University,Washington,n,NW,29700,R1,biology,instructor,male,5
+WSU,Washington State University,Washington,n,NW,29700,R1,chemistry,tt,female,3
+WSU,Washington State University,Washington,n,NW,29700,R1,chemistry,tt,male,15
+WSU,Washington State University,Washington,n,NW,29700,R1,chemistry,instructor,female,3
+WSU,Washington State University,Washington,n,NW,29700,R1,chemistry,instructor,male,7
+WSU,Washington State University,Washington,n,NW,29700,R1,physics,tt,female,2
+WSU,Washington State University,Washington,n,NW,29700,R1,physics,tt,male,16
+WSU,Washington State University,Washington,n,NW,29700,R1,physics,instructor,female,2
+WSU,Washington State University,Washington,n,NW,29700,R1,physics,instructor,male,3
+MontSU,Montana State University,Montana,n,RM,14200,R1,microbiology and cell biology,tt,female,18
+MontSU,Montana State University,Montana,n,RM,14200,R1,microbiology and cell biology,tt,male,19
+MontSU,Montana State University,Montana,n,RM,14200,R1,microbiology and cell biology,instructor,female,6
+MontSU,Montana State University,Montana,n,RM,14200,R1,microbiology and cell biology,instructor,male,2
+MontSU,Montana State University,Montana,n,RM,14200,R1,chemistry,tt,female,5
+MontSU,Montana State University,Montana,n,RM,14200,R1,chemistry,tt,male,16
+MontSU,Montana State University,Montana,n,RM,14200,R1,chemistry,instructor,female,3
+MontSU,Montana State University,Montana,n,RM,14200,R1,chemistry,instructor,male,6
+MontSU,Montana State University,Montana,n,RM,14200,R1,physics,tt,female,5
+MontSU,Montana State University,Montana,n,RM,14200,R1,physics,tt,male,14
+MontSU,Montana State University,Montana,n,RM,14200,R1,physics,instructor,female,1
+MontSU,Montana State University,Montana,n,RM,14200,R1,physics,instructor,male,2
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,biology,tt,female,17
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,biology,tt,male,18
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,biology,instructor,female,8
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,biology,instructor,male,5
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,chemistry,tt,female,7
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,chemistry,tt,male,16
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,chemistry,instructor,female,3
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,chemistry,instructor,male,8
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,physics,tt,female,8
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,physics,tt,male,40
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,physics,instructor,female,2
+UMass,University of Massachusetts Amherst,Massachusetts,n,NE,30500,R1,physics,instructor,male,9
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,biology,tt,female,6
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,biology,tt,male,9
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,biology,instructor,female,4
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,biology,instructor,male,3
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,chemistry,tt,female,2
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,chemistry,tt,male,11
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,chemistry,instructor,female,6
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,chemistry,instructor,male,4
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,physics,tt,female,3
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,physics,tt,male,9
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,physics,instructor,female,0
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,physics,instructor,male,5
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,engineering,tt,female,14
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,engineering,tt,male,68
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,engineering,instructor,female,2
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,engineering,instructor,male,1
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,math,tt,female,4
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,math,tt,male,10
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,math,instructor,female,7
+URI,University of Rhode Island,Rhode Island,n,NE,18000,R1,math,instructor,male,3
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,biology,tt,female,4
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,biology,tt,male,3
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,biology,instructor,female,7
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,biology,instructor,male,3
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,chemistry,tt,female,5
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,chemistry,tt,male,8
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,chemistry,instructor,female,9
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,chemistry,instructor,male,8
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,physics,tt,female,1
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,physics,tt,male,8
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,physics,instructor,female,0
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,physics,instructor,male,4
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,engineering,tt,female,3
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,engineering,tt,male,20
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,engineering,instructor,female,3
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,engineering,instructor,male,5
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,math,tt,female,1
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,math,tt,male,12
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,math,instructor,female,5
+UCCS,University of Colorado Springs,Colorado,n,RM,13000,R1,math,instructor,male,4
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,biology,tt,female,7
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,biology,tt,male,4
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,biology,instructor,female,1
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,biology,instructor,male,0
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,chemistry,tt,female,2
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,chemistry,tt,male,3
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,chemistry,instructor,female,0
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,chemistry,instructor,male,0
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,physics,tt,female,1
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,physics,tt,male,4
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,physics,instructor,female,0
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,physics,instructor,male,0
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,math,tt,female,3
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,math,tt,male,5
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,math,instructor,female,2
+LCC,Lewis and Clark College,Oregon,n,NW,2000,R2,math,instructor,male,2
+GZ,Gonzaga,Washington,n,NW,7300,R2,biology,tt,female,9
+GZ,Gonzaga,Washington,n,NW,7300,R2,biology,tt,male,9
+GZ,Gonzaga,Washington,n,NW,7300,R2,biology,instructor,female,1
+GZ,Gonzaga,Washington,n,NW,7300,R2,biology,instructor,male,3
+GZ,Gonzaga,Washington,n,NW,7300,R2,chemistry,tt,female,3
+GZ,Gonzaga,Washington,n,NW,7300,R2,chemistry,tt,male,9
+GZ,Gonzaga,Washington,n,NW,7300,R2,chemistry,instructor,female,3
+GZ,Gonzaga,Washington,n,NW,7300,R2,chemistry,instructor,male,2
+GZ,Gonzaga,Washington,n,NW,7300,R2,physics,tt,female,1
+GZ,Gonzaga,Washington,n,NW,7300,R2,physics,tt,male,7
+GZ,Gonzaga,Washington,n,NW,7300,R2,physics,instructor,female,1
+GZ,Gonzaga,Washington,n,NW,7300,R2,physics,instructor,male,1
+GZ,Gonzaga,Washington,n,NW,7300,R2,math,tt,female,7
+GZ,Gonzaga,Washington,n,NW,7300,R2,math,tt,male,9
+GZ,Gonzaga,Washington,n,NW,7300,R2,math,instructor,female,3
+GZ,Gonzaga,Washington,n,NW,7300,R2,math,instructor,male,1
+UNM,University of New Mexico,New Mexico,n,RM,,,biology,instructor,female,6
+UNM,University of New Mexico,New Mexico,n,RM,,,biology,instructor,male,3
+UNM,University of New Mexico,New Mexico,n,RM,,,biology,tt,female,10
+UNM,University of New Mexico,New Mexico,n,RM,,,biology,tt,male,22
+UNM,University of New Mexico,New Mexico,n,RM,,,chemistry,instructor,female,3
+UNM,University of New Mexico,New Mexico,n,RM,,,chemistry,instructor,male,2
+UNM,University of New Mexico,New Mexico,n,RM,,,chemistry,tt,female,4
+UNM,University of New Mexico,New Mexico,n,RM,,,chemistry,tt,male,17
+UNM,University of New Mexico,New Mexico,n,RM,,,physics,instructor,female,2
+UNM,University of New Mexico,New Mexico,n,RM,,,physics,instructor,male,1
+UNM,University of New Mexico,New Mexico,n,RM,,,physics,tt,female,11
+UNM,University of New Mexico,New Mexico,n,RM,,,physics,tt,male,43
+UNM,University of New Mexico,New Mexico,n,RM,,,math,instructor,female,4
+UNM,University of New Mexico,New Mexico,n,RM,,,math,instructor,male,3
+UNM,University of New Mexico,New Mexico,n,RM,,,math,tt,female,7
+UNM,University of New Mexico,New Mexico,n,RM,,,math,tt,male,18
+UNM,Brigham Young,Utah,n,RM,34000,PUI,biology,tt,female,9
+BYU,Brigham Young,Utah,n,RM,34000,PUI,biology,tt,male,66
+BYU,Brigham Young,Utah,n,RM,34000,PUI,biology,instructor,female,2
+BYU,Brigham Young,Utah,n,RM,34000,PUI,biology,instructor,male,9
+BYU,Brigham Young,Utah,n,RM,34000,PUI,chemistry,tt,female,3
+BYU,Brigham Young,Utah,n,RM,34000,PUI,chemistry,tt,male,29
+BYU,Brigham Young,Utah,n,RM,34000,PUI,chemistry,instructor,female,2
+BYU,Brigham Young,Utah,n,RM,34000,PUI,chemistry,instructor,male,3
+BYU,Brigham Young,Utah,n,RM,34000,PUI,physics,tt,female,3
+BYU,Brigham Young,Utah,n,RM,34000,PUI,physics,tt,male,28
+BYU,Brigham Young,Utah,n,RM,34000,PUI,physics,instructor,female,1
+BYU,Brigham Young,Utah,n,RM,34000,PUI,physics,instructor,male,2
+BYU,Brigham Young,Utah,n,RM,34000,PUI,math,tt,female,2
+BYU,Brigham Young,Utah,n,RM,34000,PUI,math,tt,male,27
+BYU,Brigham Young,Utah,n,RM,34000,PUI,math,instructor,female,1
+BYU,Brigham Young,Utah,n,RM,34000,PUI,math,instructor,male,8
+BYU,Brigham Young,Utah,n,RM,34000,PUI,engineering,tt,female,2
+BYU,Brigham Young,Utah,n,RM,34000,PUI,engineering,tt,male,45
+BYU,Brigham Young,Utah,n,RM,34000,PUI,engineering,instructor,female,0
+BYU,Brigham Young,Utah,n,RM,34000,PUI,engineering,instructor,male,1
+BYU,Brigham Young,Utah,n,RM,34000,PUI,computer science,tt,female,2
+BYU,Brigham Young,Utah,n,RM,34000,PUI,computer science,tt,male,34
+NAZ,Northern AZ,AZ,n,SW,26000,R2,biology,tt,female,20
+NAZ,Northern AZ,AZ,n,SW,26000,R2,biology,tt,male,33
+NAZ,Northern AZ,AZ,n,SW,26000,R2,biology,tt,unknown,2
+NAZ,Northern AZ,AZ,n,SW,26000,R2,biology,instructor,female,10
+NAZ,Northern AZ,AZ,n,SW,26000,R2,biology,instructor,male,5
+NAZ,Northern AZ,AZ,n,SW,26000,R2,chemistry,tt,female,7
+NAZ,Northern AZ,AZ,n,SW,26000,R2,chemistry,tt,male,5
+NAZ,Northern AZ,AZ,n,SW,26000,R2,chemistry,instructor,female,2
+NAZ,Northern AZ,AZ,n,SW,26000,R2,chemistry,instructor,male,5
+NAZ,Northern AZ,AZ,n,SW,26000,R2,physics,tt,female,2
+NAZ,Northern AZ,AZ,n,SW,26000,R2,physics,tt,male,9
+NAZ,Northern AZ,AZ,n,SW,26000,R2,physics,instructor,female,0
+NAZ,Northern AZ,AZ,n,SW,26000,R2,physics,instructor,male,3
+NAZ,Northern AZ,AZ,n,SW,26000,R2,math,tt,female,4
+NAZ,Northern AZ,AZ,n,SW,26000,R2,math,tt,male,12
+NAZ,Northern AZ,AZ,n,SW,26000,R2,math,tt,unknown,1
+NAZ,Northern AZ,AZ,n,SW,26000,R2,math,instructor,female,10
+NAZ,Northern AZ,AZ,n,SW,26000,R2,math,instructor,male,9
+NAZ,Northern AZ,AZ,n,SW,26000,R2,math,instructor,unknown,3
+NAZ,Northern AZ,AZ,n,SW,26000,R2,engineering,tt,female,2
+NAZ,Northern AZ,AZ,n,SW,26000,R2,engineering,tt,male,7
+NAZ,Northern AZ,AZ,n,SW,26000,R2,engineering,instructor,female,1
+NAZ,Northern AZ,AZ,n,SW,26000,R2,engineering,instructor,male,5
+NAZ,Northern AZ,AZ,n,SW,26000,R2,computer science,tt,female,5
+NAZ,Northern AZ,AZ,n,SW,26000,R2,computer science,tt,male,23
+NAZ,Northern AZ,AZ,n,SW,26000,R2,computer science,instructor,female,1
+NAZ,Northern AZ,AZ,n,SW,26000,R2,computer science,instructor,male,4

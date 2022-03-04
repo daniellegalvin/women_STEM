@@ -1,0 +1,2 @@
+"0","data <- read.csv(""WSTEM_data.csv"")"
+"0","head(data)"

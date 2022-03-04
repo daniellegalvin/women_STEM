@@ -1,0 +1,2 @@
+"0","data <- read.csv(""STEM Ratios - Sheet1 (3).csv"")"
+"0","head(data)"

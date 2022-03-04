@@ -1,0 +1,9 @@
+"0","#Plot of male and female data
+combined_plot <- male_posts %>% 
+  ggplot(aes(x=position, y=.epred, color=position))+
+  geom_violin()+
+  geom_violin(data=female_posts, aed(y=female))+
+  facet_wrap(vars(region))
+"
+"2","Error in aed(y = female) : could not find function ""aed""
+"

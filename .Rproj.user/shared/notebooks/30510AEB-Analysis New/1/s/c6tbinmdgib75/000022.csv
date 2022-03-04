@@ -1,0 +1,24 @@
+"0","#Changing data format so that I can calculate the values I need from the posterior distribution
+clean_data <- total_posts %>% 
+  select(region, position, gender, .draw, .epred) %>% 
+  ungroup() %>% 
+  select(-.row) %>% 
+  pivot_wider(id_cols=c( region, position, .draw),
+              names_from=gender,
+              values_from=.epred) %>% 
+  pivot_wider(id_cols=c( region, .draw),
+              names_from=position,
+              values_from=c(""female"", ""male"", ""unknown"")) %>% 
+  pivot_longer(cols=-c(.draw,  region ),
+               names_to=""pos_gend"",
+               values_to=""value"") %>% 
+  na.omit() %>% 
+  group_by(region) %>% 
+  pivot_wider(id_cols=c(.draw,  region), 
+              names_from=pos_gend,
+              values_from=value) %>% 
+  mutate(diff_tt=male_tt-female_tt) %>% 
+  mutate(diff_ins=male_instructor-female_instructor)
+"
+"1","Adding missing grouping variables: `.row`
+"
