@@ -1,8 +1,0 @@
-"0",""
-"0","gender_data <- data %>% "
-"0","  mutate(gender=case_when(gender==""male"" ~ ""male"","
-"0","                           gender==""unknown"" ~ ""unknown"","
-"0","                           TRUE ~ ""female"")) %>% "
-"0","  mutate(position=case_when(position==""tt""~""tt"","
-"0","                            TRUE ~ ""instructor""))"
-"0",""

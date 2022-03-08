@@ -32,9 +32,9 @@ get_prior(number ~ 1+gender*position*region, data=gender_data, family=poisson, l
 triple_mod <- brm(number ~ 1+gender*position*region,
                   family=poisson(link="log"),
                   data=gender_data %>% filter(gender==c("female", "male")),
-                  prior=c(prior(normal(0.3,0.3), class="b"),
+                  prior=c(prior(normal(0.5,0.3), class="b"),
                           prior(normal(-0.2, 0.3), class="b", coef="regionRM"),
-                          prior(normal(-2,0.3), class="b", coef="regionNW"),
+                          prior(normal(-0.8,0.3), class="b", coef="regionNW"),
                           prior(normal(1,0.5), class="Intercept")),
                   file="triple_mod.RDS",
                   file_refit="on_change",
@@ -121,7 +121,7 @@ Calculating the probability that the number of women in tt positions is greater 
 ```{r}
 tt_diff %>% 
   summarize(higher=sum(MW_SO_f_tt>0)/nrow(.))
-#19.6 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the South.
+#7.8 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the South.
 
 tt_diff %>% 
   summarize(higher=sum(MW_NE_f_tt>0)/nrow(.))
@@ -131,7 +131,7 @@ tt_diff %>%
 
 tt_diff %>% 
   summarize(higher=sum(MW_RM_f_tt>0)/nrow(.))
-#92.9 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Rocky Mountain region.
+#<0.1 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Rocky Mountain region.
 
 tt_diff %>% 
   summarize(higher=sum(MW_WC_f_tt>0)/nrow(.))
@@ -139,14 +139,14 @@ tt_diff %>%
 
 tt_diff %>% 
   summarize(higher=sum(MW_SW_f_tt>0)/nrow(.))
-# 0.12 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Southwest region.
+# 2.15 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Southwest region.
 
 tt_diff %>% 
   summarize(higher=sum(MW_NW_f_tt>0)/nrow(.))
-# > 99.9 % probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Northwest region.
+# 0.03% probability that the selected schools in the Midwest have more women employed in tt positions compared to selected schools in the Northwest region.
 ```
 
-Calculatine the probability that the number of men employed in tt positions is greater than the number of women employed in tt positions for each region. 
+Calculating the probability that the number of men employed in tt positions is greater than the number of women employed in tt positionsfor each region. 
 
 Fun (?) fact, there is a >99.9% probability that more men are employed in tt positions compared to women for ALL regions. 
 ```{r}
@@ -206,7 +206,8 @@ color_region <- test %>%
                values_to="value") %>% 
   filter(position==("tt")) %>% 
   ggplot(aes(x=gender, y=value, fill=region))+
-  geom_boxplot()
+  geom_boxplot()+
+  labs(x="Gender", y="Number of people employed")
 color_region
 ```
 
@@ -216,6 +217,140 @@ color_region
 
 
 
+
+
+
+
+
+
+
+Now I am curious about how South Dakota measures up to other regions. This is essentially the same as the above model but with SD instead of region
+```{r}
+get_prior(number ~ 1+gender*position*SD, data=gender_data, family=poisson, link="log")
+
+sd_mod <- brm(number ~ 1+gender*position*SD,
+                  family=poisson(link="log"),
+                  data=gender_data %>% filter(gender==c("female", "male")),
+                  prior=c(prior(normal(0.5,0.3), class="b"),
+                          prior(normal(1,0.5), class="Intercept")),
+                  file="sd_mod.RDS",
+                  file_refit="on_change",
+                  iter=4000, chains=3)
+
+
+saveRDS(sd_mod, file="sd_mod.RDS")
+
+# plot(conditional_effects(sd_mod))
+
+pp_check(sd_mod, type="stat_grouped", group="gender")
+pp_check(sd_mod, type="stat_grouped", group="SD")
+pp_check(sd_mod, type="stat_grouped", group="position")
+```
+
+Making my data longer and calculating some of the necessary values from the South Dakota model
+```{r}
+sd_cond_data <- distinct(sd_mod$data) %>% 
+  select(-number)
+
+sd_mod_posts <- add_epred_draws(sd_mod, newdata=sd_cond_data)
+
+sd_mod_posts$.row=NULL #had to do this to make R stop forcing the .row column grouping, does not influence calculations
+
+#Making a data frame that I can use to calculate credible intervals
+sd_test <- sd_mod_posts %>% 
+  select(-.chain, -.iteration) %>%
+  distinct() %>% 
+  pivot_wider(names_from = "gender", values_from = ".epred") %>% 
+  mutate(diff = male - female)
+
+#Another data frame which I can use to calculate region and position specific values
+sd_specific <- sd_test %>% 
+  select(-diff) %>% 
+  pivot_wider(id_cols=c(SD, .draw),
+              names_from=position, 
+              values_from=c("female", "male")) %>% 
+  pivot_wider(id_cols=c(.draw),
+              names_from=SD,
+              values_from=c("female_tt", "male_tt", "female_instructor", "male_instructor"))
+  
+```
+
+Calculating credible intervals and other necessary values for the South Dakota model
+```{r}
+#Median credible interval for the difference in men and women at each position by sd
+sd_test %>% 
+  group_by(SD, position) %>% 
+  median_qi(diff)
+
+#Median credible interval for the number of women in each position by sd
+sd_test %>% 
+  group_by(SD, position) %>% 
+  median_qi(female)
+
+#Median credible interval for the number of men in each position by sd
+sd_test %>% 
+  group_by(SD, position) %>% 
+  median_qi(male)
+
+#Calculating the differences in female_tt by region and the difference between men and women employed in tt
+sd_tt_diff <- sd_specific %>% 
+  mutate(y_n_f_tt=female_tt_y-female_tt_n) %>% 
+  mutate(m_f_sd_tt=male_tt_y-female_tt_y) %>% 
+  mutate(m_f_notsd_tt=male_tt_n-female_tt_n)
+
+```
+
+Calculating the probabilities for the South Dakota model
+```{r}
+sd_tt_diff %>% 
+  summarize(higher=sum(y_n_f_tt>0)/nrow(.))
+#<0.1 % probability that schools in South Dakota employ more women in tt positions compared to schools not in South Dakota.
+
+sd_tt_diff %>% 
+  summarize(higher=sum(m_f_sd_tt>0)/nrow(.))
+#>99.9 % probability that schools in South Dakota employ more men than women in tt positions 
+
+sd_tt_diff %>% 
+  summarize(higher=sum(m_f_notsd_tt>0)/nrow(.))
+#>99.9 % probability that schools not in South Dakota employ more men than women in tt positions
+```
+
+Making the plots for the South Dakota model!
+```{r}
+sd_data <- sd_test %>% 
+  pivot_longer(cols=c("female", "male"),
+               names_to="gender", 
+               values_to="value") %>% 
+  ggplot(aes(x=position, y=value, fill=gender))+
+  geom_violin()+
+  scale_fill_manual(values=wes_palette("Darjeeling1"))+
+  # geom_point(data=gender_data %>% filter(gender==c("female", "male")), aes(x=position, y=number),
+  #            size=1,
+  #            position=position_dodge(width=0.9))+    remove the silence to display the points
+  facet_wrap(vars(SD))+
+  labs(x="Position", y="Number of people employed")
+sd_data
+
+sd_gender_position <- sd_test %>% 
+  pivot_longer(cols=c("female", "male"),
+               names_to="gender", 
+               values_to="value") %>% 
+  ggplot(aes(x=position, y=value, fill=gender))+
+  geom_boxplot()+
+  # scale_y_log10()+
+  labs(x="Position", y="Number of people employed")
+sd_gender_position
+
+sd_color <- sd_test %>% 
+  pivot_longer(cols=c("female", "male"),
+               names_to="gender", 
+               values_to="value") %>% 
+  filter(position==("tt")) %>% 
+  ggplot(aes(x=gender, y=value, fill=SD))+
+  geom_boxplot()+
+  labs(x="Gender", y="Number of people employed")
+sd_color
+```
 
 
 
