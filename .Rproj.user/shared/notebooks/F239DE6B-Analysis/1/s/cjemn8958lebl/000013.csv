@@ -1,0 +1,4 @@
+"0","#>99.9 % probability that schools in South Dakota employ more men than women in tt positions "
+"0",""
+"0","sd_tt_diff %>% "
+"0","  summarize(higher=sum(m_f_notsd_tt>0)/nrow(.))"

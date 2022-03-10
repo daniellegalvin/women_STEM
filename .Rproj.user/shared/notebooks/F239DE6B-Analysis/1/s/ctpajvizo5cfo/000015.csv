@@ -1,0 +1,7 @@
+"0",""
+"0","#Calculating the differences in female_tt by region and the difference between men and women employed in tt"
+"0","sd_tt_diff <- sd_specific %>% "
+"0","  mutate(y_n_f_tt=female_tt_y-female_tt_n) %>% "
+"0","  mutate(m_f_sd_tt=male_tt_y-female_tt_y) %>% "
+"0","  mutate(m_f_notsd_tt=male_tt_n-female_tt_n)"
+"0",""
