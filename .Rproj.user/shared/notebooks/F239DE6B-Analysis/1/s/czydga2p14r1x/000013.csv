@@ -1,0 +1,5 @@
+"0",""
+"0","#Median credible interval for the number of men in each position by sd"
+"0","sd_test %>% "
+"0","  group_by(SD, position) %>% "
+"0","  median_qi(male)"

@@ -5,6 +5,7 @@ date: "3/1/2022"
 output: html_document
 ---
 
+Load packages
 ```{r}
 library(tidyverse)
 library(brms)
@@ -12,14 +13,7 @@ library(tidybayes)
 library(wesanderson)
 ```
 
-# ```{r}
-# if(!requireNamespace("remotes")){
-#   install.packages("remotes")
-# }
-# remotes::install_github("paul-buerkner/brms")
-# ```
-
-
+Load the data
 ```{r}
 data <- read.csv("Data/data.csv")%>% 
   mutate(gender=case_when(gender=="male" ~ "male",
@@ -33,8 +27,10 @@ head(data)
 
 Model looking at the three way interaction
 ```{r}
+#This line gets the information about ways I can customize the priors
 get_prior(number ~ 1+gender*position*region, data=data, family=poisson, link="log")
 
+#This is the model using a poisson likelihood and a log link, looking at how the number of people employed varies based on a three way interaction between gender, position, and region.
 triple_mod <- brm(number ~ 1+gender*position*region,
                   family=poisson(link="log"),
                   data=data %>% filter(gender==c("female", "male")),
@@ -47,10 +43,11 @@ triple_mod <- brm(number ~ 1+gender*position*region,
                   iter=4000, chains=3)
 
 
-saveRDS(triple_mod, file="triple_mod.RDS")
+saveRDS(triple_mod, file="triple_mod.RDS") #This saves my model so I don't have to re run it if I don't change it
 
 # plot(conditional_effects(triple_mod))
 
+#These are posterior predictive checks to see how well the model predicts data for each group
 pp_check(triple_mod, type="stat_grouped", group="gender")
 pp_check(triple_mod, type="stat_grouped", group="region")
 pp_check(triple_mod, type="stat_grouped", group="position")
@@ -59,9 +56,11 @@ pp_check(triple_mod, type="stat_grouped", group="position")
 
 Making my data longer and calculating some of the necessary values
 ```{r}
+#Data for conditioning
 cond_data <- distinct(triple_mod$data) %>% 
   select(-number)
 
+#posterior values from the model
 mod_posts <- add_epred_draws(triple_mod, newdata=cond_data)
 
 mod_posts$.row=NULL #had to do this to make R stop forcing the .row column grouping, does not influence calculations
@@ -178,7 +177,7 @@ gender_tt_diff %>%
   summarize(sum(NW_gender_tt>0)/nrow(.))
 ```
 
-Making the plots!
+Making the plots! I have used color blind friendly choices :)
 ```{r}
 all_data <- test %>% 
   pivot_longer(cols=c("female", "male"),
@@ -186,24 +185,29 @@ all_data <- test %>%
                values_to="value") %>% 
   ggplot(aes(x=position, y=value, fill=gender))+
   geom_violin()+
-  scale_fill_manual(values=wes_palette("Darjeeling1"))+
+  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
   # geom_point(data=gender_data %>% filter(gender==c("female", "male")), aes(x=position, y=number),
   #            size=1,
-  #            position=position_dodge(width=0.9))+    remove the silence to display the points
+  #            position=position_dodge(width=0.9))+    #remove the silence to display the points
   facet_wrap(vars(region))+
   scale_y_log10()+
   labs(x="Position", y="Number of people employed")
 all_data
+
+ggsave("DG_plot1.jpg", plot=all_data, width=6, height=4, units="in", dpi=600)
 
 gender_position <- test %>% 
   pivot_longer(cols=c("female", "male"),
                names_to="gender", 
                values_to="value") %>% 
   ggplot(aes(x=position, y=value, fill=gender))+
+  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
   geom_boxplot()+
   # scale_y_log10()+
   labs(x="Position", y="Number of people employed")
 gender_position
+
+ggsave("DG_plot2.jpg", plot=gender_position, width=6, height=4, units="in", dpi=600)
 
 color_region <- test %>% 
   pivot_longer(cols=c("female", "male"),
@@ -211,9 +215,13 @@ color_region <- test %>%
                values_to="value") %>% 
   filter(position==("tt")) %>% 
   ggplot(aes(x=gender, y=value, fill=region))+
-  geom_boxplot()+
-  labs(x="Gender", y="Number of people employed")
+  scale_fill_manual(values=c("#E69F00", "#0072B2", "#CC6677", "#999933", "#661100", "#D55E00", "#009E73"))+
+  geom_violin()+
+  labs(x="Gender", y="Number of people employed in tt positions")
 color_region
+
+ggsave("DG_plot3.jpg", plot=color_region, width=6, height=4, units="in", dpi=600)
+
 ```
 
 
@@ -326,35 +334,47 @@ sd_data <- sd_test %>%
   pivot_longer(cols=c("female", "male"),
                names_to="gender", 
                values_to="value") %>% 
+    mutate(State=case_when(SD=="n" ~ "Other",
+                         TRUE ~ "South Dakota")) %>% 
   ggplot(aes(x=position, y=value, fill=gender))+
   geom_violin()+
-  scale_fill_manual(values=wes_palette("Darjeeling1"))+
+  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
   # geom_point(data=gender_data %>% filter(gender==c("female", "male")), aes(x=position, y=number),
   #            size=1,
   #            position=position_dodge(width=0.9))+    remove the silence to display the points
-  facet_wrap(vars(SD))+
+  facet_wrap(vars(State))+
   labs(x="Position", y="Number of people employed")
 sd_data
+
+ggsave("DG_plot4.jpg", plot=sd_data, width=6, height=4, units="in", dpi=600)
 
 sd_gender_position <- sd_test %>% 
   pivot_longer(cols=c("female", "male"),
                names_to="gender", 
                values_to="value") %>% 
   ggplot(aes(x=position, y=value, fill=gender))+
+  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
   geom_boxplot()+
   # scale_y_log10()+
   labs(x="Position", y="Number of people employed")
 sd_gender_position
+
+ggsave("DG_plot5.jpg", plot=sd_gender_position, width=6, height=4, units="in", dpi=600)
 
 sd_color <- sd_test %>% 
   pivot_longer(cols=c("female", "male"),
                names_to="gender", 
                values_to="value") %>% 
   filter(position==("tt")) %>% 
-  ggplot(aes(x=gender, y=value, fill=SD))+
-  geom_boxplot()+
+  mutate(State=case_when(SD=="n" ~ "Other",
+                         TRUE ~ "South Dakota")) %>% 
+  ggplot(aes(x=gender, y=value, fill=State))+
+  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
+  geom_violin()+
   labs(x="Gender", y="Number of people employed")
 sd_color
+
+ggsave("DG_plot6.jpg", plot=sd_color, width=6, height=4, units="in", dpi=600)
 ```
 
 
