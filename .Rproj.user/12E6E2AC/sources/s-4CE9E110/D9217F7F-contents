@@ -7,6 +7,8 @@ output: html_document
 
 Load packages
 ```{r}
+library(Matrix)
+library(dbplyr)
 library(tidyverse)
 library(brms)
 library(tidybayes)
@@ -185,7 +187,7 @@ all_data <- test %>%
                values_to="value") %>% 
   ggplot(aes(x=position, y=value, fill=gender))+
   geom_violin()+
-  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
+  scale_fill_manual(values=c("#F2F903", "#F82893"))+
   # geom_point(data=gender_data %>% filter(gender==c("female", "male")), aes(x=position, y=number),
   #            size=1,
   #            position=position_dodge(width=0.9))+    #remove the silence to display the points
@@ -369,13 +371,55 @@ sd_color <- sd_test %>%
   mutate(State=case_when(SD=="n" ~ "Other",
                          TRUE ~ "South Dakota")) %>% 
   ggplot(aes(x=gender, y=value, fill=State))+
-  scale_fill_manual(values=c("#E69F00", "#0072B2"))+
+  scale_fill_manual(values=c("#F2F903", "#F82893"))+
   geom_violin()+
   labs(x="Gender", y="Number of people employed")
 sd_color
 
 ggsave("DG_plot6.jpg", plot=sd_color, width=6, height=4, units="in", dpi=600)
 ```
+
+
+
+
+Sensitivity analysis information from Bayes on March 29, 2022
+
+Purpose of a sensitivity analysis is to determine if your priors are having too much influence on your model predictions
+
+Here is how you do the sensitivity analysis: 
+Don't worry about the mean of your data, double (or otherwise increase) your standard deviations to determine if your inference changes significantly. If it does not, this indicates that your model is not overly sensitive to the priors you have used. If the model is sensitive to the priors, as long as you justicy the priors, this is actually okay. It is all about the justification. In a paper or a presentation you would want to include the plot to show the visual inspection to support your model. This is simply a visual inspection, if they look close enough this is good enough, typically. 
+
+In methods: "We performed a sensitivity analysis by re-running the model with wider (less-informative) priors."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
