@@ -187,7 +187,7 @@ all_data <- test %>%
                values_to="value") %>% 
   ggplot(aes(x=position, y=value, fill=gender))+
   geom_violin()+
-  scale_fill_manual(values=c("#F2F903", "#F82893"))+
+  scale_fill_manual(values=c("#F89DA5", "#C3D69B"))+
   # geom_point(data=gender_data %>% filter(gender==c("female", "male")), aes(x=position, y=number),
   #            size=1,
   #            position=position_dodge(width=0.9))+    #remove the silence to display the points
@@ -371,7 +371,7 @@ sd_color <- sd_test %>%
   mutate(State=case_when(SD=="n" ~ "Other",
                          TRUE ~ "South Dakota")) %>% 
   ggplot(aes(x=gender, y=value, fill=State))+
-  scale_fill_manual(values=c("#F2F903", "#F82893"))+
+  scale_fill_manual(values=c("#F89DA5", "#C3D69B"))+
   geom_violin()+
   labs(x="Gender", y="Number of people employed")
 sd_color
