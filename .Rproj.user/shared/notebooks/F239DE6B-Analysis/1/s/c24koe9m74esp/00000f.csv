@@ -1,2 +1,0 @@
-"0","sd_tt_diff %>% "
-"0","  summarize(higher=sum(y_n_f_tt>0)/nrow(.))"

@@ -1,4 +1,0 @@
-"0","#Median credible interval for the difference in men and women at each position by sd"
-"0","sd_test %>% "
-"0","  group_by(SD, position) %>% "
-"0","  median_qi(diff)"
